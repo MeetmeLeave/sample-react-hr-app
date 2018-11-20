@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "Sample application using react/redux",
   "scripts": {
+    "start": "npm run lint && npm test && webpack-dev-server --open --mode development",
+    "lint": "node_modules/.bin/eslint src",
     "test": "jest --verbose"
   },
   "keywords": [
@@ -24,6 +26,7 @@
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
     "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
     "eslint": "^5.9.0",
