@@ -1,0 +1,16 @@
+{
+  "name": "react-sample-hr-app",
+  "version": "0.0.1",
+  "description": "Sample application using react/redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "keywords": [
+    "React",
+    "Redux",
+    "Sample"
+  ],
+  "author": "Vlad Martynenko (vladimir.martynenko.work@gmail.com)",
+  "license": "ISC"
+}
