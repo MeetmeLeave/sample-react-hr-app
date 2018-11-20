@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { STAGES } from "../../common/magicValues";
+import styles from './styles.css';
 
 const backward = '<';
 const forward = '>';
@@ -24,19 +25,19 @@ export class CrewMemberCard extends Component {
     render() {
         const { name, picture, city } = this.props;
         return (
-            <div>
+            <div className={styles.card}>
                 <div>
                     <img src={picture.thumbnail}/>
                 </div>
                 <div>{name.title} {name.first} {name.last}</div>
                 <div>From: {city}</div>
-                <div>
+                <div className={styles["arrows-container"]}>
                     {this.props.stage === 0 ? null :
-                        <button
-                            onClick={this.handleMoveBackward}>{backward}</button>}
+                        <button className={styles["left-arrow"]}
+                                onClick={this.handleMoveBackward}>{backward}</button>}
                     {this.props.stage === STAGES.length - 1 ? null :
-                        <button
-                            onClick={this.handleMoveForward}>{forward}</button>}
+                        <button className={styles["right-arrow"]}
+                                onClick={this.handleMoveForward}>{forward}</button>}
                 </div>
             </div>
         );

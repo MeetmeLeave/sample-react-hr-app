@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
+import styles from './styles.css';
 
 export class Filter extends Component {
     constructor(props) {
@@ -26,7 +27,7 @@ export class Filter extends Component {
 
     render() {
         return (
-            <div>
+            <div className={styles["filter-container"]}>
                 <div>Name: <input name="nameFilter" value={this.state.name}
                                   onChange={this.setFilter}></input>
                 </div>

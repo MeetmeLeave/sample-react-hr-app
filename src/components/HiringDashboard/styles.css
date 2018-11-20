@@ -1,0 +1,46 @@
+.crew-list-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.crew-list {
+    min-width: 300px;
+    max-width: 500px;
+    margin-right: 10px;
+}
+
+.card {
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-container > div {
+    margin-bottom: 35px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.card > div {
+    text-transform: capitalize;
+}
+
+.arrows-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-arrow {
+    justify-self: flex-start;
+}
+
+.right-arrow {
+    justify-self: flex-end;
+    margin-left: auto;
+}
