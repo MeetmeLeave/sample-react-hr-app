@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Sample application using react/redux",
   "scripts": {
-    "start": "npm run lint && npm test && webpack-dev-server --open --mode development",
+    "start": "npm run lint && webpack-dev-server --open --mode development",
     "lint": "node_modules/.bin/eslint src",
     "test": "jest --verbose"
   },
