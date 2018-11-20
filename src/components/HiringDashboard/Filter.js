@@ -22,13 +22,13 @@ export class Filter extends Component {
     }
 
     updateFilter() {
-        this.props.onFilter(this.state.name, this.state.city);
+        this.props.onFilter(this.state.name.toLowerCase(), this.state.city.toLowerCase());
     }
 
     render() {
         return (
             <div className={styles["filter-container"]}>
-                <div>Name: <input name="nameFilter" value={this.state.name}
+                <div>First Name: <input name="nameFilter" value={this.state.name}
                                   onChange={this.setFilter}></input>
                 </div>
                 <div>City: <input name="cityFilter" value={this.state.city}
