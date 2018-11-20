@@ -5,9 +5,9 @@ import { STAGES } from "../../common/magicValues";
 const filterCrewMembers = (crewMembers, stage, { name, city }) => {
     let result = crewMembers.filter(member => member.stage === stage);
     result = name ? result.filter(
-        member => member.name.first === name) : result;
+        member => member.name.first.indexOf(name) >= 0) : result;
     result = city ? result.filter(
-        member => member.location.city === city) : result;
+        member => member.location.city.indexOf(city) >= 0) : result;
     return result;
 }
 
